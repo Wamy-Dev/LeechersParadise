@@ -1,0 +1,47 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": ".",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "devv": "node src/index.js",
+    "start": "node src/index.js NODE_ENV=production node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "all-debrid-api": "^1.1.0",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "download": "^8.0.0",
+    "express": "^4.17.3",
+    "express-http-proxy": "^1.6.3",
+    "express-queue": "^0.0.13",
+    "express-rate-limit": "^6.4.0",
+    "firebase": "^9.6.10",
+    "firebase-admin": "^11.0.1",
+    "got": "^12.1.0",
+    "helmet": "^5.1.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "node-real-debrid": "^1.0.6",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.15",
+    "rate-limit-mongo": "^2.3.2",
+    "rate-limit-redis": "^3.0.1",
+    "real-debrid-api": "^1.1.0",
+    "redis": "^4.3.0",
+    "request-ip": "^2.2.0",
+    "sqlite3": "^5.0.8",
+    "stripe": "^9.0.0",
+    "ts-node": "^10.8.0"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.6"
+  }
+}

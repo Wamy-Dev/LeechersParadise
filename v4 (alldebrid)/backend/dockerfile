@@ -1,0 +1,12 @@
+FROM node:16
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install --omit=dev
+ENV APITOKEN=TOKEN
+ENV APITOKEN2=TOKEN
+ENV APITOKENPREMIUM=TOKEN
+ENV APITOKENPREMIUM2=TOKEN
+COPY . .
+EXPOSE 3001
+EXPOSE 3002
+CMD [ "node", "src/index.js" ]
